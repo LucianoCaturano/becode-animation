@@ -1,0 +1,16 @@
+body {
+  height: 100vh;
+  background-color: #245060;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  left: -900px;
+
+  width: 700px;
+  height: 700px;
+}
