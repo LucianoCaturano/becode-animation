@@ -23,10 +23,12 @@
     <script type="text/javascript" src="./assets/js/jQueryRotate.js"></script>
     <script>
         $(document).ready(function () {
-            $("#ext").animate({ left: '475' }, "slow");
-            $("#int").animate({ left: '32vw' }, "slow", () => {
-                $("#becode").animate({ opacity: 1 }, "slow");
+            $("#ext").animate({ left: '475' }, "slow", () => {
+                $("#int").animate({ left: '32vw' }, "slow", () => {
+                    $("#becode").animate({ opacity: 1 }, "slow");
+                });
             });
+
             var angleext = 0;
             var angleint = 0;
             setInterval(function () {
