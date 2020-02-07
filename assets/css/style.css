@@ -12,18 +12,18 @@ body {
   left: -900px;
 }
 
-#int{
+#int {
   position: absolute;
-  left: -900px;
+  /* left: -900px; */
+  left: 615px;
   z-index: 1;
-
+  opacity: 0;
 }
 
-#becode{
+#becode {
   position: absolute;
   left: 795px;
   top: 230px;
   z-index: 2;
   opacity: 0;
-
 }
