@@ -11,16 +11,29 @@
 </head>
 
 <body>
-    <img id="logo" src="./assets/img/bc_seal_print.png" alt="Logo BeCode">
+    <img id="ext" src="./assets/img/exterieur.png" alt="Logo BeCode">
+    <img id="int" src="./assets/img/interieur.png" alt="Logo BeCode">
+    <img id="becode" src="./assets/img/becode.png" alt="Logo BeCode">
+
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/jQueryRotate.js"></script>
     <script>
         $(document).ready(function () {
-            $("#logo").animate({ left: '32vw' }, "slow");
-            var angle = 0;
+            $("#ext").animate({ left: '475' }, "slow");
+            $("#int").animate({ left: '32vw' }, "slow", () => {
+                $("#becode").animate({ opacity: 1 }, "slow");
+            });
+            var angleext = 0;
+            var angleint = 0;
             setInterval(function () {
-                angle += 3;
-                $("#logo").rotate(angle);
+                angleext += 3;
+                angleint -= 3;
+                $("#ext").rotate(angleext);
+                $("#int").rotate(angleint);
             }, 50);
         })
     </script>

@@ -7,10 +7,23 @@ body {
   overflow: hidden;
 }
 
-img {
+#ext {
   position: absolute;
   left: -900px;
+}
 
-  width: 700px;
-  height: 700px;
+#int{
+  position: absolute;
+  left: -900px;
+  z-index: 1;
+
+}
+
+#becode{
+  position: absolute;
+  left: 795px;
+  top: 230px;
+  z-index: 2;
+  opacity: 0;
+
 }
